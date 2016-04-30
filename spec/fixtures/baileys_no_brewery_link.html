@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<!--[if IE 8]>
+<html class="ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 8) ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Draft List | Bailey&#039;s Taproom - A Beer Bar in Portland, Oregon</title>
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="http://www.baileystaproom.com/xmlrpc.php">
+    <link href="/digitalpour/digitalPour.css" rel="stylesheet" media="all" type="text/css" />
+    <style type="text/css">
+        #follow.left {width:40px; position:fixed; left:0; top:100px;background-color:#a9a9a9;padding:10px 0;font-family:impact,charcoal,arial, helvetica,sans-serif;
+            -moz-border-radius-topright: 5px;
+            -webkit-border-top-right-radius:5px;
+            -moz-border-radius-bottomright:5px;
+            -webkit-border-bottom-right-radius:5px;
+            border:2px solid #fff;border-width:2px 2px 2px 0;
+        }
+        #follow.left ul {padding:0; margin:0; list-style-type:none !important;font-size:24px;color:black;}
+        #follow.left ul li {padding-bottom:10px;list-style-type:none !important;
+        }
+        #follow.left ul li.follow {background:transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/images/follow-word-000-left.png) no-repeat; height:79px;margin:0 0 10px 4px;}
+        #follow.left ul li a {display:block;}
+        #follow.left ul li.text_replace a.facebook {background:transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/images/facebook-word-left.png) no-repeat top right; height:91px;width:20px}
+        #follow.left ul li.text_replace a.facebook:hover {background:transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/images/facebook-word-left.png) no-repeat top left; }
+        #follow.left ul li.text_replace a.twitter {background:transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/images/twitter-word-left.png) no-repeat top right; height:65px;width:20px}
+        #follow.left ul li.text_replace a.twitter:hover {background:transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/images/twitter-word-left.png) no-repeat top left;}
+        #follow.left ul li.text_replace a.rss {background:transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/images/rss-word-left.png) no-repeat top right;  height:31px; width:20px}
+        #follow.left ul li.text_replace a.rss:hover {background:transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/images/rss-word-left.png) no-repeat top left;}
+        #follow.left ul li.text_replace a.stumble {background:transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/images/stumble-word-left.png) no-repeat top right;  height:134px; width:21px}
+        #follow.left ul li.text_replace a.stumble:hover {background:transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/images/stumble-word-left.png) no-repeat top left;}
+        #follow.left ul li.text_replace a.youtube {background:transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/images/youtube-word-left.png) no-repeat top right;  height:81px; width:20px}
+        #follow.left ul li.text_replace a.youtube:hover {background:transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/images/youtube-word-left.png) no-repeat top left;}
+        #follow.left ul li.text_replace a.myspace {background:transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/images/myspace-word-left.png) no-repeat top right;  height:90px; width:19px}
+        #follow.left ul li.text_replace a.myspace:hover {background:transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/images/myspace-word-left.png) no-repeat top left;}
+        #follow.left ul li.text_replace a.orkut {background:transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/images/orkut-word-left.png) no-repeat top right; height:58px;width:20px}
+        #follow.left ul li.text_replace a.orkut:hover {background:transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/images/orkut-word-left.png) no-repeat top left;}
+        #follow.left ul li.text_replace a.hyves {background:transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/images/hyves-word-left.png) no-repeat top right; height:58px;width:20px}
+        #follow.left ul li.text_replace a.hyves:hover {background:transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/images/hyves-word-left.png) no-repeat top left;}
+        #follow.left ul li.follow span, #follow ul li a span {display:none}
+
+
+        .size16 .digg {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/16/digg.png) no-repeat;}
+        .size16 .twitter {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/16/twitter.png) no-repeat; }
+        .size16 .stumble {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/16/stumbleupon.png) no-repeat; }
+        .size16 .reddit {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/16/reddit.png) no-repeat;}
+        .size16 .delicious {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/16/delicious.png) no-repeat;}
+        .size16 .hyves  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/16/hyves.png) no-repeat;}
+        .size16 .facebook  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/16/facebook.png) no-repeat;}
+        .size16 .orkut  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/16/orkut.png) no-repeat;}
+        .size16 .myspace  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/16/myspace.png) no-repeat;}
+        .size16 .rss  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/16/rss.png) no-repeat;}
+        .size16 .youtube  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/16/youtube.png) no-repeat;}
+
+        .size24 .digg {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/24/digg.png) no-repeat;}
+        .size24 .twitter {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/24/twitter.png) no-repeat; }
+        .size24 .stumble {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/24/stumbleupon.png) no-repeat; }
+        .size24 .reddit {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/24/reddit.png) no-repeat;}
+        .size24 .delicious {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/24/delicious.png) no-repeat;}
+        .size24 .hyves  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/24/hyves.png) no-repeat;}
+        .size24 .facebook  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/24/facebook.png) no-repeat;}
+        .size24 .orkut  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/24/orkut.png) no-repeat;}
+        .size24 .myspace  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/24/myspace.png) no-repeat;}
+        .size24 .rss  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/24/rss.png) no-repeat;}
+        .size24 .youtube  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/24/youtube.png) no-repeat;}
+
+        .size32 .digg {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/32/digg.png) no-repeat;}
+        .size32 .twitter {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/32/twitter.png) no-repeat; }
+        .size32 .stumble {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/32/stumbleupon.png) no-repeat; }
+        .size32 .reddit {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/32/reddit.png) no-repeat;}
+        .size32 .delicious {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/32/delicious.png) no-repeat;}
+        .size32 .hyves  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/32/hyves.png) no-repeat;}
+        .size32 .facebook  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/32/facebook.png) no-repeat;}
+        .size32 .orkut  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/32/orkut.png) no-repeat;}
+        .size32 .myspace  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/32/myspace.png) no-repeat;}
+        .size32 .rss  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/32/rss.png) no-repeat;}
+        .size32 .youtube  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/32/youtube.png) no-repeat;}
+
+        .size48 .digg {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/48/digg.png) no-repeat;}
+        .size48 .twitter {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/48/twitter.png) no-repeat; }
+        .size48 .stumble {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/48/stumbleupon.png) no-repeat; }
+        .size48 .reddit {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/48/reddit.png) no-repeat;}
+        .size48 .delicious {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/48/delicious.png) no-repeat;}
+        .size48 .hyves  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/48/hyves.png) no-repeat;}
+        .size48 .facebook  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/48/facebook.png) no-repeat;}
+        .size48 .orkut  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/48/orkut.png) no-repeat;}
+        .size48 .myspace  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/48/myspace.png) no-repeat;}
+        .size48 .rss  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/48/rss.png) no-repeat;}
+        .size48 .youtube  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/48/youtube.png) no-repeat;}
+
+        .size60 .digg {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/60/digg.png) no-repeat;}
+        .size60 .twitter {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/60/twitter.png) no-repeat; }
+        .size60 .stumble {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/60/stumbleupon.png) no-repeat; }
+        .size60 .reddit {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/60/reddit.png) no-repeat;}
+        .size60 .delicious {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/60/delicious.png) no-repeat;}
+        .size60 .hyves  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/60/hyves.png) no-repeat;}
+        .size60 .facebook  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/60/facebook.png) no-repeat;}
+        .size60 .orkut  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/60/orkut.png) no-repeat;}
+        .size60 .myspace  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/60/myspace.png) no-repeat;}
+        .size60 .rss  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/60/rss.png) no-repeat;}
+        .size60 .youtube  {background: transparent url(http://www.baileystaproom.com/wp-content/plugins/share-and-follow/default/60/youtube.png) no-repeat;}
+        .share {margin:0 3px 3px 0;}
+        .phat span {display:inline;}
+        .size32 li.icon_text a {line-height:34px;padding-left:40px;}
+        .size16 li.icon_text a {padding-left:20px;line-height:20px;}
+        .size24 li.icon_text a {line-height:30px;padding-left:30px;}
+        .size48 li.icon_text a {line-height:56px;padding-left:56px;}
+        .size60 li.icon_text a {line-height:70px;padding-left:70px;}
+
+        ul.row {}
+
+        ul.row li {list-style-type:none;}
+        li.icon_text a {background-position:left center;}
+        li.text_only a {background-image:none !important;padding-left:0; }
+        li.iconOnly a span.head {display:none; zoom:1; *display: inline; _height: 30px; }
+        li.iconOnly a {float:left;margin:0 3px 3px 0; padding-right:10px; !important;}
+
+
+
+
+        .size16 li.iconOnly a {height:16px;width:16px;}
+        .size24 li.iconOnly a {height:24px;width:24px;}
+        .size32 li.iconOnly a {height:32px;width:32px;}
+        .size48 li.iconOnly a {height:48px ;width:48px;}
+        .size60 li.iconOnly a {height:60px ;width:60px;}
+        ul.socialwrap {list-style-type:none;margin:0; padding:0}
+        ul.socialwrap li {list-style-type:none;}
+
+        div.clean {clear:left;}
+
+    </style>
+
+    <!-- All in One SEO Pack 2.2.7.1 by Michael Torbert of Semper Fi Web Design[246,320] -->
+    <link rel="canonical" href="http://www.baileystaproom.com/draft-list/" />
+    <!-- /all in one seo pack -->
+    <link rel="alternate" type="application/rss+xml" title="Bailey&#039;s Taproom - A Beer Bar in Portland, Oregon &raquo; Feed" href="http://www.baileystaproom.com/feed/" />
+    <link rel="alternate" type="application/rss+xml" title="Bailey&#039;s Taproom - A Beer Bar in Portland, Oregon &raquo; Comments Feed" href="http://www.baileystaproom.com/comments/feed/" />
+    <script type="text/javascript">
+        window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/www.baileystaproom.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=9c9c25011f3875fd55f3664e6ff64e73"}};
+        !function(a,b,c){function d(a){var c,d=b.createElement("canvas"),e=d.getContext&&d.getContext("2d"),f=String.fromCharCode;return e&&e.fillText?(e.textBaseline="top",e.font="600 32px Arial","flag"===a?(e.fillText(f(55356,56806,55356,56826),0,0),d.toDataURL().length>3e3):"diversity"===a?(e.fillText(f(55356,57221),0,0),c=e.getImageData(16,16,1,1).data.toString(),e.fillText(f(55356,57221,55356,57343),0,0),c!==e.getImageData(16,16,1,1).data.toString()):("simple"===a?e.fillText(f(55357,56835),0,0):e.fillText(f(55356,57135),0,0),0!==e.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8"),diversity:d("diversity")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8&&c.supports.diversity||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+    </script>
+    <style type="text/css">
+        img.wp-smiley,
+        img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+    </style>
+    <link rel='stylesheet' id='kpicasa-css'  href='http://www.baileystaproom.com/wp-content/plugins/kpicasa-gallery/kpicasa_gallery.css?ver=9c9c25011f3875fd55f3664e6ff64e73' type='text/css' media='screen' />
+    <link rel='stylesheet' id='shadowbox-css'  href='http://www.baileystaproom.com/wp-content/plugins/kpicasa-gallery/shadowbox/shadowbox.css?ver=9c9c25011f3875fd55f3664e6ff64e73rc1' type='text/css' media='screen' />
+    <link rel='stylesheet' id='category-posts-css'  href='http://www.baileystaproom.com/wp-content/plugins/category-posts/cat-posts.css?ver=9c9c25011f3875fd55f3664e6ff64e73' type='text/css' media='all' />
+    <link rel='stylesheet' id='menu-image-css'  href='http://www.baileystaproom.com/wp-content/plugins/menu-image/menu-image.css?ver=9c9c25011f3875fd55f3664e6ff64e73' type='text/css' media='all' />
+    <link rel='stylesheet' id='simplyInstagram-css'  href='http://www.baileystaproom.com/wp-content/plugins/simply-instagram/css/simply-instagram.css?ver=9c9c25011f3875fd55f3664e6ff64e73' type='text/css' media='all' />
+    <link rel='stylesheet' id='prettyPhoto-css'  href='http://www.baileystaproom.com/wp-content/plugins/simply-instagram/css/simply-instagram-prettyPhoto.css?ver=9c9c25011f3875fd55f3664e6ff64e73' type='text/css' media='all' />
+    <link rel='stylesheet' id='videojs-plugin-css'  href='http://www.baileystaproom.com/wp-content/plugins/videojs-html5-video-player-for-wordpress/plugin-styles.css?ver=9c9c25011f3875fd55f3664e6ff64e73' type='text/css' media='all' />
+    <link rel='stylesheet' id='videojs-css'  href='//vjs.zencdn.net/4.5/video-js.css?ver=9c9c25011f3875fd55f3664e6ff64e73' type='text/css' media='all' />
+    <link rel='stylesheet' id='graphy-fonts-css'  href='//fonts.googleapis.com/css?family=Lora%3A400%2C400italic%2C700%2C700italic%7CBitter%3A400&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+    <link rel='stylesheet' id='graphy-genericons-css'  href='http://www.baileystaproom.com/wp-content/themes/graphy/genericons/genericons.css?ver=9c9c25011f3875fd55f3664e6ff64e73' type='text/css' media='all' />
+    <link rel='stylesheet' id='graphy-style-css'  href='http://www.baileystaproom.com/wp-content/themes/graphy/style.css?ver=9c9c25011f3875fd55f3664e6ff64e73' type='text/css' media='all' />
+    <link rel='stylesheet' id='cart66-css-css'  href='http://www.baileystaproom.com/wp-content/plugins/cart66/cart66.css?ver=9c9c25011f3875fd55f3664e6ff64e73' type='text/css' media='all' />
+    <script type='text/javascript' src='http://www.baileystaproom.com/wp-includes/js/jquery/jquery.js?ver=9c9c25011f3875fd55f3664e6ff64e73'></script>
+    <script type='text/javascript' src='http://www.baileystaproom.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=9c9c25011f3875fd55f3664e6ff64e73'></script>
+    <script type='text/javascript' src='http://www.baileystaproom.com/wp-includes/js/swfobject.js?ver=9c9c25011f3875fd55f3664e6ff64e73-20120417'></script>
+    <script type='text/javascript' src='http://www.baileystaproom.com/wp-content/plugins/kpicasa-gallery/shadowbox/shadowbox.js?ver=9c9c25011f3875fd55f3664e6ff64e73rc1'></script>
+    <script type='text/javascript' src='http://www.baileystaproom.com/wp-content/plugins/simply-instagram/js/simply-instagram-jquery.prettyPhoto.js?ver=9c9c25011f3875fd55f3664e6ff64e73'></script>
+    <link rel='https://api.w.org/' href='http://www.baileystaproom.com/wp-json/' />
+    <link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://www.baileystaproom.com/xmlrpc.php?rsd" />
+    <link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://www.baileystaproom.com/wp-includes/wlwmanifest.xml" />
+
+    <link rel='shortlink' href='http://wp.me/POYGM-8' />
+    <link rel="alternate" type="application/json+oembed" href="http://www.baileystaproom.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.baileystaproom.com%2Fdraft-list%2F" />
+    <link rel="alternate" type="text/xml+oembed" href="http://www.baileystaproom.com/wp-json/oembed/1.0/embed?url=http%3A%2F%2Fwww.baileystaproom.com%2Fdraft-list%2F&#038;format=xml" />
+    <script type='text/javascript'>
+        Shadowbox.init();
+    </script>
+    <meta http-equiv="X-UA-Compatible" content="IE=8" />
+    <!-- BEGIN SimplyInstagram IE -->
+    <!-- [if IE 9]>
+    <style type="text/css">
+
+        .comment-profile{
+            margin: 2px;
+            width: 45px;
+            float: left;
+        }
+        .comment-profile img{
+            vertical-align: top;
+        }
+        .comment-holder{
+            top: 0px;
+            width: 200px;
+            float: left !important;
+        }
+
+        .comments-holder{
+            width: 210px;
+            float: left;
+        }
+    </style>
+    <![endif]-->
+    <!-- END SimplyInstagram IE -->
+
+
+    <script type="text/javascript"> document.createElement("video");document.createElement("audio");document.createElement("track"); </script>
+    <style type="text/css">
+        .site-logo { margin-top: px; padding-bottom: 10px; }
+        .entry-content a, .entry-summary a, .comment-content a, .comment-respond a, .navigation a, .comment-navigation a, .current-menu-item > a { color: #000000; }
+        a:hover { color: #000000; }
+    </style>
+    <meta name="generator" content="Cart66 Professional 1.5.6" />
+    <script type="text/javascript">
+        (function(url){
+            if(/(?:Chrome\/26\.0\.1410\.63 Safari\/537\.31|WordfenceTestMonBot)/.test(navigator.userAgent)){ return; }
+            var addEvent = function(evt, handler) {
+                if (window.addEventListener) {
+                    document.addEventListener(evt, handler, false);
+                } else if (window.attachEvent) {
+                    document.attachEvent('on' + evt, handler);
+                }
+            };
+            var removeEvent = function(evt, handler) {
+                if (window.removeEventListener) {
+                    document.removeEventListener(evt, handler, false);
+                } else if (window.detachEvent) {
+                    document.detachEvent('on' + evt, handler);
+                }
+            };
+            var evts = 'contextmenu dblclick drag dragend dragenter dragleave dragover dragstart drop keydown keypress keyup mousedown mousemove mouseout mouseover mouseup mousewheel scroll'.split(' ');
+            var logHuman = function() {
+                var wfscr = document.createElement('script');
+                wfscr.type = 'text/javascript';
+                wfscr.async = true;
+                wfscr.src = url + '&r=' + Math.random();
+                (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(wfscr);
+                for (var i = 0; i < evts.length; i++) {
+                    removeEvent(evts[i], logHuman);
+                }
+            };
+            for (var i = 0; i < evts.length; i++) {
+                addEvent(evts[i], logHuman);
+            }
+        })('//www.baileystaproom.com/?wordfence_logHuman=1&hid=5224FEC76686D7DD37B99628F9C4EFE2');
+    </script></head>
+
+<body class="page page-id-8 page-template page-template-nosidebar page-template-nosidebar-php no-sidebar footer-0 has-avatars">
+<div id="page" class="hfeed site">
+
+    <header id="masthead" class="site-header" role="banner">
+        <div class="site-branding">
+            <h1 class="site-logo"><a href="http://www.baileystaproom.com/" rel="home"><img alt="Bailey&#039;s Taproom &#8211; A Beer Bar in Portland, Oregon" src="http://www.baileystaproom.com/wp-content/uploads/Baileys__logo-e1439585571837.jpg" /></a></h1>
+            <div class="site-description">25 Rotating Taps of Craft Ales, Lagers, and Ciders</div>
+        </div>
+
+        <div class="main-navigation-wrapper">
+            <nav id="site-navigation" class="main-navigation" role="navigation">
+                <h1 class="menu-toggle">Menu</h1>
+                <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+                <div class="menu-main-menu-container"><ul id="menu-main-menu" class="menu"><li id="menu-item-2015" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2015"><a href="http://www.baileystaproom.com/" class='menu-image-title-after'><span class="menu-image-title">Home</span></a></li>
+                    <li id="menu-item-743" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-8 current_page_item menu-item-743"><a href="http://www.baileystaproom.com/draft-list/" class='menu-image-title-after'><span class="menu-image-title">Draft List</span></a></li>
+                    <li id="menu-item-746" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-746"><a href="http://www.baileystaproom.com/bottle-list/" class='menu-image-title-after'><span class="menu-image-title">Bottle List</span></a></li>
+                    <li id="menu-item-1846" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-1846"><a href="http://www.baileystaproom.com/events/" class='menu-image-title-after'><span class="menu-image-title">Events</span></a>
+                        <ul class="sub-menu">
+                            <li id="menu-item-2624" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2624"><a href="http://theupperlip.net/private-event-reservations/" class='menu-image-title-after'><span class="menu-image-title">Private Event Rental</span></a></li>
+                        </ul>
+                    </li>
+                    <li id="menu-item-745" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-745"><a href="http://www.baileystaproom.com/photos/" class='menu-image-title-after'><span class="menu-image-title">Photos</span></a></li>
+                    <li id="menu-item-2463" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-2463"><a href="http://www.baileystaproom.com/store/" class='menu-image-title-after'><span class="menu-image-title">Store</span></a></li>
+                    <li id="menu-item-2479" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-2479"><a href="http://www.baileystaproom.com/store/cart/" class='menu-image-title-after menu-image-not-hovered'><img width="24" height="24" src="http://www.baileystaproom.com/wp-content/uploads/full-cart-dark-e1441931320686.png" class="menu-image menu-image-title-after" alt="full-cart-dark" /><span class="menu-image-title">Cart</span></a></li>
+                </ul></div>							</nav><!-- #site-navigation -->
+        </div>
+
+    </header><!-- #masthead -->
+
+    <div id="content" class="site-content">
+
+        <div id="primary" class="content-area">
+            <main id="main" class="site-main" role="main">
+
+
+
+                <article id="post-8" class="post-8 page type-page status-publish hentry">
+                    <header class="entry-header">
+                        <h1 class="entry-title">Draft List</h1>
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <p>
+                            <div id="datafieldcontainer">
+                                <div id="responsecontainer"">
+                                <div id="boxfielddata" title="58% remaining" ><img src="http://devel.baileystaproom.com/wp-content/uploads/OregonOutline.png" style="vertical-align: text-bottom;" width="30"> <b><span>1: <a href="http://www.bushwackercider.com"  target="_blank">Bushwhacker Cider</a> <i>Alice</i></span></b><br />Apple Cider w/ cider and saison yeasts 6.7% <a href="http://maps.google.com/maps?q=Portland, OR" target="_blank">Portland, OR</a> <span></span>
+                                    <div id="prices">10oz &#8211; $3 | 20oz &#8211; $6  |
+                                        <div id="GrowlerPrice"> <form id='cartButtonForm_30' class="Cart66CartButton" method="post" action="http://www.baileystaproom.com/store/cart/" > <input type='hidden' name='task' id="task_30" value='addToCart' /> <input type='hidden' name='cart66ItemId' value='30' /> <input type='hidden' name='product_url' value='http://www.baileystaproom.com/draft-list/' /> <span class="Cart66Price Cart66PriceDescription"> 32oz Crowler $9 </span> <input type='submit' value='Add to Cart' class='Cart66ButtonPrimary purAddToCart ajax-button' name='addToCart_30' id='addToCart_30' /> </form> <div id="stock_message_box_30" class="alert-message alert-error" style="display: none;"> <h2>We're Sorry</h2> <p id="stock_message_30"></p> <input type="button" name="close" value="OK" id="close" class="Cart66ButtonSecondary modalClose" /> </div> <div id="response_warning" class="alert-message warning_30" style="display: none;"> <p><strong><span class="message-header">Inventory Restriction</span></strong></p> <div id="message_warning" class="warning_message_30"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_error" class="alert-message alert-error error_30" style="display: none;"> <p><strong><span class="message-header">Inventory Failure</span></strong></p> <div id="message_error" class="error_message_30"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_success" class="alert-message success success_30" style="display: none;"> <p><strong><span class="message-header">Success!</span></strong></p> <div id="message_success" class="success_message_30"></div></div>  </div>
+    </div>
+    <div><span style="position:relative;"></span>
+        <div class="percentbar3" style="width:100px;">
+            <div style="width:58px;font-size:8pt;"></div>
+        </div>
+    </div>
+</div>
+<div id="responsecontainer"">
+<div id="boxfielddata" title="52% remaining" ><b><span>2: </a>Baird &#038; Dewar</a> 2014 <i>Constitution</i></span></b><br />Barrel Aged Cider (Spiced Rum) with Raisins and Spices 9.1% <a href="http://maps.google.com/maps?q=Portland, Oregon" target="_blank">Portland, Oregon</a> <span></span>
+    <div id="prices">4oz Pour &#8211; $3 | 12oz &#8211; $6 </div>
+    <div><span style="position:relative;"></span>
+        <div class="percentbar3" style="width:100px;">
+            <div style="width:52px;font-size:8pt;"></div>
+        </div>
+    </div>
+</div>
+<div id="responsecontainer"">
+<div id="boxfielddata" title="86% remaining" ><img src="http://devel.baileystaproom.com/wp-content/uploads/OregonOutline.png" style="vertical-align: text-bottom;" width="30"> <b><span>Cask 3: <a href="http://http://www.pintsbrewing.com/"  target="_blank">Pints</a> <i>Cascade Single Hop Pale</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=Cascade Single Hop Pale Cascade Single Hop Pale" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=Pints Cascade Single Hop Pale&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />Pale Ale &#8211; Hops (Cascade) <a href="http://maps.google.com/maps?q=Portland, OR" target="_blank">Portland, OR</a> <span></span>
+    <div id="prices">10oz &#8211; $3 | 20oz &#8211; $5 </div>
+    <div><span style="position:relative;"></span>
+        <div class="percentbar3" style="width:100px;">
+            <div style="width:86px;font-size:8pt;"></div>
+        </div>
+    </div>
+</div>
+<div id="responsecontainer"">
+<div id="boxfielddata" title="11% remaining" ><img src="http://devel.baileystaproom.com/wp-content/uploads/OregonOutline.png" style="vertical-align: text-bottom;" width="30"> <b><span>4: <a href="http://http://pfriembeer.com/"  target="_blank">pFriem</a> <i>Mosaic Single Hop Pale</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=Mosaic Single Hop Pale Mosaic Single Hop Pale" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=pFriem Mosaic Single Hop Pale&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />Pale Ale &#8211; Hops (Mosaic) 6.3% <a href="http://maps.google.com/maps?q=Hood River, OR" target="_blank">Hood River, OR</a> <span></span>
+    <div id="prices">10oz &#8211; $3 | 20oz &#8211; $5 </div>
+    <div><span style="position:relative;"></span>
+        <div class="percentbar1" style="width:100px;">
+            <div style="width:11px;font-size:8pt;"></div>
+        </div>
+    </div>
+</div>
+<div id="responsecontainer"">
+<div id="boxfielddata" title="26% remaining" ><img src="http://devel.baileystaproom.com/wp-content/uploads/OregonOutline.png" style="vertical-align: text-bottom;" width="30"> <b><span>5: </a>Kells</a> <i>Irish Reds</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=Irish Reds Irish Reds" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=Kells Irish Reds&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />Amber Ale  4.5% <a href="http://maps.google.com/maps?q=Portland, OR" target="_blank">Portland, OR</a> <span></span>
+    <div id="prices">10oz &#8211; $3 | 20oz &#8211; $5  |
+        <div id="GrowlerPrice"> <form id='cartButtonForm_34' class="Cart66CartButton" method="post" action="http://www.baileystaproom.com/store/cart/" > <input type='hidden' name='task' id="task_34" value='addToCart' /> <input type='hidden' name='cart66ItemId' value='34' /> <input type='hidden' name='product_url' value='http://www.baileystaproom.com/draft-list/' /> <span class="Cart66Price Cart66PriceDescription"> 32oz Crowler $8 </span> <input type='submit' value='Add to Cart' class='Cart66ButtonPrimary purAddToCart ajax-button' name='addToCart_34' id='addToCart_34' /> </form> <div id="stock_message_box_34" class="alert-message alert-error" style="display: none;"> <h2>We're Sorry</h2> <p id="stock_message_34"></p> <input type="button" name="close" value="OK" id="close" class="Cart66ButtonSecondary modalClose" /> </div> <div id="response_warning" class="alert-message warning_34" style="display: none;"> <p><strong><span class="message-header">Inventory Restriction</span></strong></p> <div id="message_warning" class="warning_message_34"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_error" class="alert-message alert-error error_34" style="display: none;"> <p><strong><span class="message-header">Inventory Failure</span></strong></p> <div id="message_error" class="error_message_34"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_success" class="alert-message success success_34" style="display: none;"> <p><strong><span class="message-header">Success!</span></strong></p> <div id="message_success" class="success_message_34"></div></div>  </div>
+    </div>
+    <div><span style="position:relative;"></span>
+        <div class="percentbar2" style="width:100px;">
+            <div style="width:26px;font-size:8pt;"></div>
+        </div>
+    </div>
+</div>
+<div id="responsecontainer"">
+<div id="boxfielddata" title="61% remaining" ><b><span>Nitro 6: <a href="http://http://www.backwoodsbrewingcompany.com"  target="_blank">Backwoods</a> <i>Winchester Brown</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=Winchester Brown Winchester Brown" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=Backwoods Winchester Brown&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />Brown Ale  6.2% <a href="http://maps.google.com/maps?q=Carson, WA" target="_blank">Carson, WA</a> <span></span>
+    <div id="prices">10oz &#8211; $3 | 20oz &#8211; $5 </div>
+    <div><span style="position:relative;"></span>
+        <div class="percentbar3" style="width:100px;">
+            <div style="width:61px;font-size:8pt;"></div>
+        </div>
+    </div>
+</div>
+<div id="responsecontainer"">
+<div id="boxfielddata" title="60% remaining" ><img src="http://devel.baileystaproom.com/wp-content/uploads/OregonOutline.png" style="vertical-align: text-bottom;" width="30"> <b><span>7: <a href="http://www.silvermoonbrewing.com"  target="_blank">Silver Moon</a> <i>IPA 97</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=IPA 97 IPA 97" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=Silver Moon IPA 97&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />IPA  7.0% <a href="http://maps.google.com/maps?q=Bend, OR" target="_blank">Bend, OR</a> <span></span>
+    <div id="prices">10oz &#8211; $3 | 20oz &#8211; $5  |
+        <div id="GrowlerPrice"> <form id='cartButtonForm_36' class="Cart66CartButton" method="post" action="http://www.baileystaproom.com/store/cart/" > <input type='hidden' name='task' id="task_36" value='addToCart' /> <input type='hidden' name='cart66ItemId' value='36' /> <input type='hidden' name='product_url' value='http://www.baileystaproom.com/draft-list/' /> <span class="Cart66Price Cart66PriceDescription"> 32oz Crowler $8 </span> <input type='submit' value='Add to Cart' class='Cart66ButtonPrimary purAddToCart ajax-button' name='addToCart_36' id='addToCart_36' /> </form> <div id="stock_message_box_36" class="alert-message alert-error" style="display: none;"> <h2>We're Sorry</h2> <p id="stock_message_36"></p> <input type="button" name="close" value="OK" id="close" class="Cart66ButtonSecondary modalClose" /> </div> <div id="response_warning" class="alert-message warning_36" style="display: none;"> <p><strong><span class="message-header">Inventory Restriction</span></strong></p> <div id="message_warning" class="warning_message_36"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_error" class="alert-message alert-error error_36" style="display: none;"> <p><strong><span class="message-header">Inventory Failure</span></strong></p> <div id="message_error" class="error_message_36"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_success" class="alert-message success success_36" style="display: none;"> <p><strong><span class="message-header">Success!</span></strong></p> <div id="message_success" class="success_message_36"></div></div>  </div>
+    </div>
+    <div><span style="position:relative;"></span>
+        <div class="percentbar3" style="width:100px;">
+            <div style="width:60px;font-size:8pt;"></div>
+        </div>
+    </div>
+</div>
+<div id="responsecontainer"">
+<div id="boxfielddata" title="45% remaining" ><img src="http://devel.baileystaproom.com/wp-content/uploads/OregonOutline.png" style="vertical-align: text-bottom;" width="30"> <b><span>8: <a href="http://www.farmhousebeer.com"  target="_blank">Logsdon Farmhouse</a> <i>Monikken Kruin</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=Monikken Kruin Monikken Kruin" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=Logsdon Farmhouse Monikken Kruin&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />Belgian Style Quadrupel  10.5% <a href="http://maps.google.com/maps?q=Hood River, OR" target="_blank">Hood River, OR</a> <span></span>
+    <div id="prices">4oz Pour &#8211; $5 | 12oz &#8211; $10 </div>
+    <div><span style="position:relative;"></span>
+        <div class="percentbar2" style="width:100px;">
+            <div style="width:45px;font-size:8pt;"></div>
+        </div>
+    </div>
+</div>
+<div id="responsecontainer"">
+<div id="boxfielddata" title="12% remaining" ><img src="http://devel.baileystaproom.com/wp-content/uploads/OregonOutline.png" style="vertical-align: text-bottom;" width="30"> <b><span>9: <a href="http://www.hopworksbeer.com"  target="_blank">Hopworks</a> 2011 <i>Noggin&#8217; Floggin&#8217;</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=Noggin' Floggin' Noggin' Floggin'" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=Hopworks Noggin' Floggin'&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />Barleywine  11.0% <a href="http://maps.google.com/maps?q=Portland, OR" target="_blank">Portland, OR</a> <span></span>
+    <div id="prices">4oz Pour &#8211; $3 | 12oz &#8211; $6 </div>
+    <div><span style="position:relative;"></span>
+        <div class="percentbar1" style="width:100px;">
+            <div style="width:12px;font-size:8pt;"></div>
+        </div>
+    </div>
+</div>
+<div id="responsecontainer"">
+<div id="boxfielddata" title="62% remaining" ><b><span>10: <a href="http://www.everybodysbrewing.com"  target="_blank">Everybody&#8217;s</a> <i>EL ZESTO</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=EL ZESTO EL ZESTO" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=Everybody's EL ZESTO&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />Sour Citrus IPA  <a href="http://maps.google.com/maps?q=White Salmon, WA" target="_blank">White Salmon, WA</a> <span></span>
+    <div id="prices">10oz &#8211; $3 | 20oz &#8211; $5  |
+        <div id="GrowlerPrice"> <form id='cartButtonForm_54' class="Cart66CartButton" method="post" action="http://www.baileystaproom.com/store/cart/" > <input type='hidden' name='task' id="task_54" value='addToCart' /> <input type='hidden' name='cart66ItemId' value='54' /> <input type='hidden' name='product_url' value='http://www.baileystaproom.com/draft-list/' /> <span class="Cart66Price Cart66PriceDescription"> 32oz Crowler $8 </span> <input type='submit' value='Add to Cart' class='Cart66ButtonPrimary purAddToCart ajax-button' name='addToCart_54' id='addToCart_54' /> </form> <div id="stock_message_box_54" class="alert-message alert-error" style="display: none;"> <h2>We're Sorry</h2> <p id="stock_message_54"></p> <input type="button" name="close" value="OK" id="close" class="Cart66ButtonSecondary modalClose" /> </div> <div id="response_warning" class="alert-message warning_54" style="display: none;"> <p><strong><span class="message-header">Inventory Restriction</span></strong></p> <div id="message_warning" class="warning_message_54"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_error" class="alert-message alert-error error_54" style="display: none;"> <p><strong><span class="message-header">Inventory Failure</span></strong></p> <div id="message_error" class="error_message_54"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_success" class="alert-message success success_54" style="display: none;"> <p><strong><span class="message-header">Success!</span></strong></p> <div id="message_success" class="success_message_54"></div></div>  </div>
+    </div>
+    <div><span style="position:relative;"></span>
+        <div class="percentbar3" style="width:100px;">
+            <div style="width:62px;font-size:8pt;"></div>
+        </div>
+    </div>
+</div>
+<div id="responsecontainer"">
+<div id="boxfielddata" title="68% remaining" ><b><span>11: <a href="http://www.victorybeer.com"  target="_blank">Victory</a> <i>Ten Years Alt</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=Ten Years Alt Ten Years Alt" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=Victory Ten Years Alt&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />Altbier  5.0% <a href="http://maps.google.com/maps?q=Downingtown, PA" target="_blank">Downingtown, PA</a> <span></span>
+    <div id="prices">10oz &#8211; $3 | 20oz &#8211; $6  |
+        <div id="GrowlerPrice"> <form id='cartButtonForm_39' class="Cart66CartButton" method="post" action="http://www.baileystaproom.com/store/cart/" > <input type='hidden' name='task' id="task_39" value='addToCart' /> <input type='hidden' name='cart66ItemId' value='39' /> <input type='hidden' name='product_url' value='http://www.baileystaproom.com/draft-list/' /> <span class="Cart66Price Cart66PriceDescription"> 32oz Crowler $9 </span> <input type='submit' value='Add to Cart' class='Cart66ButtonPrimary purAddToCart ajax-button' name='addToCart_39' id='addToCart_39' /> </form> <div id="stock_message_box_39" class="alert-message alert-error" style="display: none;"> <h2>We're Sorry</h2> <p id="stock_message_39"></p> <input type="button" name="close" value="OK" id="close" class="Cart66ButtonSecondary modalClose" /> </div> <div id="response_warning" class="alert-message warning_39" style="display: none;"> <p><strong><span class="message-header">Inventory Restriction</span></strong></p> <div id="message_warning" class="warning_message_39"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_error" class="alert-message alert-error error_39" style="display: none;"> <p><strong><span class="message-header">Inventory Failure</span></strong></p> <div id="message_error" class="error_message_39"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_success" class="alert-message success success_39" style="display: none;"> <p><strong><span class="message-header">Success!</span></strong></p> <div id="message_success" class="success_message_39"></div></div>  </div>
+    </div>
+    <div><span style="position:relative;"></span>
+        <div class="percentbar3" style="width:100px;">
+            <div style="width:68px;font-size:8pt;"></div>
+        </div>
+    </div>
+</div>
+<div id="responsecontainer"">
+<div id="boxfielddata" title="61% remaining" ><b><span>12: <a href="http://www.northcoastbrewing.com"  target="_blank">North Coast</a> <i>Stellar</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=Stellar Stellar" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=North Coast Stellar&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />American IPA  6.0% <a href="http://maps.google.com/maps?q=Fort Bragg, CA" target="_blank">Fort Bragg, CA</a> <span></span>
+    <div id="prices">10oz &#8211; $3 | 20oz &#8211; $6  |
+        <div id="GrowlerPrice"> <form id='cartButtonForm_40' class="Cart66CartButton" method="post" action="http://www.baileystaproom.com/store/cart/" > <input type='hidden' name='task' id="task_40" value='addToCart' /> <input type='hidden' name='cart66ItemId' value='40' /> <input type='hidden' name='product_url' value='http://www.baileystaproom.com/draft-list/' /> <span class="Cart66Price Cart66PriceDescription"> 32oz Crowler $9 </span> <input type='submit' value='Add to Cart' class='Cart66ButtonPrimary purAddToCart ajax-button' name='addToCart_40' id='addToCart_40' /> </form> <div id="stock_message_box_40" class="alert-message alert-error" style="display: none;"> <h2>We're Sorry</h2> <p id="stock_message_40"></p> <input type="button" name="close" value="OK" id="close" class="Cart66ButtonSecondary modalClose" /> </div> <div id="response_warning" class="alert-message warning_40" style="display: none;"> <p><strong><span class="message-header">Inventory Restriction</span></strong></p> <div id="message_warning" class="warning_message_40"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_error" class="alert-message alert-error error_40" style="display: none;"> <p><strong><span class="message-header">Inventory Failure</span></strong></p> <div id="message_error" class="error_message_40"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_success" class="alert-message success success_40" style="display: none;"> <p><strong><span class="message-header">Success!</span></strong></p> <div id="message_success" class="success_message_40"></div></div>  </div>
+    </div>
+    <div><span style="position:relative;"></span>
+        <div class="percentbar3" style="width:100px;">
+            <div style="width:61px;font-size:8pt;"></div>
+        </div>
+    </div>
+</div>
+<div id="responsecontainer"">
+<div id="boxfielddata" title="75% remaining" ><img src="http://devel.baileystaproom.com/wp-content/uploads/OregonOutline.png" style="vertical-align: text-bottom;" width="30"> <b><span>13: <a href="http://www.terminalgravitybrewing.com"  target="_blank">Terminal Gravity</a> <i>Wallowa Lake Lager</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=Wallowa Lake Lager Wallowa Lake Lager" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=Terminal Gravity Wallowa Lake Lager&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />Pre-Prohibition American Lager w/ corn 4.8% <a href="http://maps.google.com/maps?q=Enterprise, OR" target="_blank">Enterprise, OR</a> <span></span>
+    <div id="prices">10oz &#8211; $3 | 20oz &#8211; $5  |
+        <div id="GrowlerPrice"> <form id='cartButtonForm_41' class="Cart66CartButton" method="post" action="http://www.baileystaproom.com/store/cart/" > <input type='hidden' name='task' id="task_41" value='addToCart' /> <input type='hidden' name='cart66ItemId' value='41' /> <input type='hidden' name='product_url' value='http://www.baileystaproom.com/draft-list/' /> <span class="Cart66Price Cart66PriceDescription"> 32oz Crowler $8 </span> <input type='submit' value='Add to Cart' class='Cart66ButtonPrimary purAddToCart ajax-button' name='addToCart_41' id='addToCart_41' /> </form> <div id="stock_message_box_41" class="alert-message alert-error" style="display: none;"> <h2>We're Sorry</h2> <p id="stock_message_41"></p> <input type="button" name="close" value="OK" id="close" class="Cart66ButtonSecondary modalClose" /> </div> <div id="response_warning" class="alert-message warning_41" style="display: none;"> <p><strong><span class="message-header">Inventory Restriction</span></strong></p> <div id="message_warning" class="warning_message_41"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_error" class="alert-message alert-error error_41" style="display: none;"> <p><strong><span class="message-header">Inventory Failure</span></strong></p> <div id="message_error" class="error_message_41"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_success" class="alert-message success success_41" style="display: none;"> <p><strong><span class="message-header">Success!</span></strong></p> <div id="message_success" class="success_message_41"></div></div>  </div>
+    </div>
+    <div><span style="position:relative;"></span>
+        <div class="percentbar3" style="width:100px;">
+            <div style="width:75px;font-size:8pt;"></div>
+        </div>
+    </div>
+</div>
+</div>
+<div id="shim"></div>
+<div id="datafieldcontainer">
+    <div id="responsecontainer"">
+    <div id="boxfielddata" title="70% remaining" ><b><span>14: <a href="http://www.bellsbeer.com/"  target="_blank">Bell&#8217;s</a> <i>Cherry Stout</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/beer/bells-cherry-stout/3216/" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/beer/profile/287/2511/" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />American Stout w/ Montmorency Cherries 7.0% <a href="http://maps.google.com/maps?q=Galesburg, MI" target="_blank">Galesburg, MI</a> <span></span>
+        <div id="prices">4oz Pour &#8211; $3 | 12oz &#8211; $6  |
+            <div id="GrowlerPrice"> <form id='cartButtonForm_51' class="Cart66CartButton" method="post" action="http://www.baileystaproom.com/store/cart/" > <input type='hidden' name='task' id="task_51" value='addToCart' /> <input type='hidden' name='cart66ItemId' value='51' /> <input type='hidden' name='product_url' value='http://www.baileystaproom.com/draft-list/' /> <span class="Cart66Price Cart66PriceDescription"> 32oz Crowler $13 </span> <input type='submit' value='Add to Cart' class='Cart66ButtonPrimary purAddToCart ajax-button' name='addToCart_51' id='addToCart_51' /> </form> <div id="stock_message_box_51" class="alert-message alert-error" style="display: none;"> <h2>We're Sorry</h2> <p id="stock_message_51"></p> <input type="button" name="close" value="OK" id="close" class="Cart66ButtonSecondary modalClose" /> </div> <div id="response_warning" class="alert-message warning_51" style="display: none;"> <p><strong><span class="message-header">Inventory Restriction</span></strong></p> <div id="message_warning" class="warning_message_51"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_error" class="alert-message alert-error error_51" style="display: none;"> <p><strong><span class="message-header">Inventory Failure</span></strong></p> <div id="message_error" class="error_message_51"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_success" class="alert-message success success_51" style="display: none;"> <p><strong><span class="message-header">Success!</span></strong></p> <div id="message_success" class="success_message_51"></div></div>  </div>
+        </div>
+        <div><span style="position:relative;"></span>
+            <div class="percentbar3" style="width:100px;">
+                <div style="width:70px;font-size:8pt;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="responsecontainer"">
+    <div id="boxfielddata" title="50% remaining" ><img src="http://devel.baileystaproom.com/wp-content/uploads/OregonOutline.png" style="vertical-align: text-bottom;" width="30"> <b><span>15: <a href="http://sunriverbrewingcompany.com"  target="_blank">Sunriver</a> <i>Fuzztail Hefeweizen</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=Fuzztail Hefeweizen Fuzztail Hefeweizen" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=Sunriver Fuzztail Hefeweizen&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />Hefeweizen  5.0% <a href="http://maps.google.com/maps?q=Sunriver, OR" target="_blank">Sunriver, OR</a> <span></span>
+        <div id="prices">10oz &#8211; $3 | 20oz &#8211; $5  |
+            <div id="GrowlerPrice"> <form id='cartButtonForm_45' class="Cart66CartButton" method="post" action="http://www.baileystaproom.com/store/cart/" > <input type='hidden' name='task' id="task_45" value='addToCart' /> <input type='hidden' name='cart66ItemId' value='45' /> <input type='hidden' name='product_url' value='http://www.baileystaproom.com/draft-list/' /> <span class="Cart66Price Cart66PriceDescription"> 32oz Crowler $8 </span> <input type='submit' value='Add to Cart' class='Cart66ButtonPrimary purAddToCart ajax-button' name='addToCart_45' id='addToCart_45' /> </form> <div id="stock_message_box_45" class="alert-message alert-error" style="display: none;"> <h2>We're Sorry</h2> <p id="stock_message_45"></p> <input type="button" name="close" value="OK" id="close" class="Cart66ButtonSecondary modalClose" /> </div> <div id="response_warning" class="alert-message warning_45" style="display: none;"> <p><strong><span class="message-header">Inventory Restriction</span></strong></p> <div id="message_warning" class="warning_message_45"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_error" class="alert-message alert-error error_45" style="display: none;"> <p><strong><span class="message-header">Inventory Failure</span></strong></p> <div id="message_error" class="error_message_45"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_success" class="alert-message success success_45" style="display: none;"> <p><strong><span class="message-header">Success!</span></strong></p> <div id="message_success" class="success_message_45"></div></div>  </div>
+        </div>
+        <div><span style="position:relative;"></span>
+            <div class="percentbar3" style="width:100px;">
+                <div style="width:50px;font-size:8pt;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="responsecontainer"">
+    <div id="boxfielddata" title="91% remaining" ><img src="http://devel.baileystaproom.com/wp-content/uploads/OregonOutline.png" style="vertical-align: text-bottom;" width="30"> <b><span>16: <a href="http://http://www.bendbrewingco.com/"  target="_blank">Bend Brewing</a> <i>Ching Ching</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=Ching Ching Ching Ching" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=Bend Brewing Ching Ching&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />Berliner Weisse  w/ Pomegranate and Hibiscus 4.0% <a href="http://maps.google.com/maps?q=Bend, OR" target="_blank">Bend, OR</a> <span></span>
+        <div id="prices">10oz &#8211; $4 | 20oz &#8211; $7  |
+            <div id="GrowlerPrice"> <form id='cartButtonForm_46' class="Cart66CartButton" method="post" action="http://www.baileystaproom.com/store/cart/" > <input type='hidden' name='task' id="task_46" value='addToCart' /> <input type='hidden' name='cart66ItemId' value='46' /> <input type='hidden' name='product_url' value='http://www.baileystaproom.com/draft-list/' /> <span class="Cart66Price Cart66PriceDescription"> 32oz Crowler $11 </span> <input type='submit' value='Add to Cart' class='Cart66ButtonPrimary purAddToCart ajax-button' name='addToCart_46' id='addToCart_46' /> </form> <div id="stock_message_box_46" class="alert-message alert-error" style="display: none;"> <h2>We're Sorry</h2> <p id="stock_message_46"></p> <input type="button" name="close" value="OK" id="close" class="Cart66ButtonSecondary modalClose" /> </div> <div id="response_warning" class="alert-message warning_46" style="display: none;"> <p><strong><span class="message-header">Inventory Restriction</span></strong></p> <div id="message_warning" class="warning_message_46"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_error" class="alert-message alert-error error_46" style="display: none;"> <p><strong><span class="message-header">Inventory Failure</span></strong></p> <div id="message_error" class="error_message_46"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_success" class="alert-message success success_46" style="display: none;"> <p><strong><span class="message-header">Success!</span></strong></p> <div id="message_success" class="success_message_46"></div></div>  </div>
+        </div>
+        <div><span style="position:relative;"></span>
+            <div class="percentbar3" style="width:100px;">
+                <div style="width:91px;font-size:8pt;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="responsecontainer"">
+    <div id="boxfielddata" title="9% remaining" ><img src="http://devel.baileystaproom.com/wp-content/uploads/OregonOutline.png" style="vertical-align: text-bottom;" width="30"> <b><span>17: <a href="http://http://culminationbrewing.com/"  target="_blank">Culmination</a> <i>Urizen</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=Urizen Urizen" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=Culmination Urizen&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />India Session Ale &#8211; Hops (Idaho 7, El Dorado) 4.5% <a href="http://maps.google.com/maps?q=Portland, OR" target="_blank">Portland, OR</a> <span></span>
+        <div id="prices">10oz &#8211; $3 | 20oz &#8211; $5 </div>
+        <div><span style="position:relative;"></span>
+            <div class="percentbar1" style="width:100px;">
+                <div style="width:9px;font-size:8pt;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="responsecontainer"">
+    <div id="boxfielddata" title="70% remaining" ><img src="http://devel.baileystaproom.com/wp-content/uploads/OregonOutline.png" style="vertical-align: text-bottom;" width="30"> <b><span>18: <a href="http://www.fatheadsportland.com"  target="_blank">Fat Head&#8217;s</a> <i>Head Smasher</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=Head Smasher Head Smasher" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=Fat Head's Head Smasher&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />Triple IPA &#8211; Hops (Mosaic, Simcoe) 10.9% <a href="http://maps.google.com/maps?q=Portland, OR" target="_blank">Portland, OR</a> <span></span>
+        <div id="prices">4oz Pour &#8211; $3 | 12oz &#8211; $6  |
+            <div id="GrowlerPrice"> <form id='cartButtonForm_48' class="Cart66CartButton" method="post" action="http://www.baileystaproom.com/store/cart/" > <input type='hidden' name='task' id="task_48" value='addToCart' /> <input type='hidden' name='cart66ItemId' value='48' /> <input type='hidden' name='product_url' value='http://www.baileystaproom.com/draft-list/' /> <span class="Cart66Price Cart66PriceDescription"> 32oz Crowler $14 </span> <input type='submit' value='Add to Cart' class='Cart66ButtonPrimary purAddToCart ajax-button' name='addToCart_48' id='addToCart_48' /> </form> <div id="stock_message_box_48" class="alert-message alert-error" style="display: none;"> <h2>We're Sorry</h2> <p id="stock_message_48"></p> <input type="button" name="close" value="OK" id="close" class="Cart66ButtonSecondary modalClose" /> </div> <div id="response_warning" class="alert-message warning_48" style="display: none;"> <p><strong><span class="message-header">Inventory Restriction</span></strong></p> <div id="message_warning" class="warning_message_48"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_error" class="alert-message alert-error error_48" style="display: none;"> <p><strong><span class="message-header">Inventory Failure</span></strong></p> <div id="message_error" class="error_message_48"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_success" class="alert-message success success_48" style="display: none;"> <p><strong><span class="message-header">Success!</span></strong></p> <div id="message_success" class="success_message_48"></div></div>  </div>
+        </div>
+        <div><span style="position:relative;"></span>
+            <div class="percentbar3" style="width:100px;">
+                <div style="width:70px;font-size:8pt;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="responsecontainer"">
+    <div id="boxfielddata" title="13% remaining" ><img src="http://devel.baileystaproom.com/wp-content/uploads/OregonOutline.png" style="vertical-align: text-bottom;" width="30"> <b><span>19: <a href="http://http://www.cascadelakes.com/"  target="_blank">Cascade Lakes</a> <i>Ziggy Stardust</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=Ziggy Stardust Ziggy Stardust" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=Cascade Lakes Ziggy Stardust&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />Strong Ale  6.9% <a href="http://maps.google.com/maps?q=Redmond, OR" target="_blank">Redmond, OR</a> <span></span>
+        <div id="prices">10oz &#8211; $3 | 20oz &#8211; $5 </div>
+        <div><span style="position:relative;"></span>
+            <div class="percentbar1" style="width:100px;">
+                <div style="width:13px;font-size:8pt;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="responsecontainer"">
+    <div id="boxfielddata" title="30% remaining" ><b><span>20: <a href="http://http://www.avbc.com/"  target="_blank">Anderson Valley</a> <i>Huge Arker</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=Huge Arker Huge Arker" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://www.beeradvocate.com/beer/profile/193/111493/" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />Russian Imperial Stout  &#8211; Barrel Aged (Wild Turkey) 13.8% <a href="http://maps.google.com/maps?q=Boonville, CA " target="_blank">Boonville, CA </a> <span></span>
+        <div id="prices">4oz Pour &#8211; $3 | 12oz &#8211; $6  |
+            <div id="GrowlerPrice"> <form id='cartButtonForm_52' class="Cart66CartButton" method="post" action="http://www.baileystaproom.com/store/cart/" > <input type='hidden' name='task' id="task_52" value='addToCart' /> <input type='hidden' name='cart66ItemId' value='52' /> <input type='hidden' name='product_url' value='http://www.baileystaproom.com/draft-list/' /> <span class="Cart66Price Cart66PriceDescription"> 32oz Crowler $13 </span> <input type='submit' value='Add to Cart' class='Cart66ButtonPrimary purAddToCart ajax-button' name='addToCart_52' id='addToCart_52' /> </form> <div id="stock_message_box_52" class="alert-message alert-error" style="display: none;"> <h2>We're Sorry</h2> <p id="stock_message_52"></p> <input type="button" name="close" value="OK" id="close" class="Cart66ButtonSecondary modalClose" /> </div> <div id="response_warning" class="alert-message warning_52" style="display: none;"> <p><strong><span class="message-header">Inventory Restriction</span></strong></p> <div id="message_warning" class="warning_message_52"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_error" class="alert-message alert-error error_52" style="display: none;"> <p><strong><span class="message-header">Inventory Failure</span></strong></p> <div id="message_error" class="error_message_52"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_success" class="alert-message success success_52" style="display: none;"> <p><strong><span class="message-header">Success!</span></strong></p> <div id="message_success" class="success_message_52"></div></div>  </div>
+        </div>
+        <div><span style="position:relative;"></span>
+            <div class="percentbar2" style="width:100px;">
+                <div style="width:30px;font-size:8pt;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="responsecontainer"">
+    <div id="boxfielddata" title="10% remaining" ><b><span>21: <a href="http://http://www.coronadobrewingcompany.com/"  target="_blank">Coronado</a> <i>Orange Avenue Wit</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/beer/coronado-orange-avenue-wit/108146/" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://www.beeradvocate.com/beer/profile/2447/57631/?ba=bgildea" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />Witbier  5.2% <a href="http://maps.google.com/maps?q=San Diego, CA, USA" target="_blank">San Diego, CA, USA</a> <span></span>
+        <div id="prices">10oz &#8211; $3 | 20oz &#8211; $5 </div>
+        <div><span style="position:relative;"></span>
+            <div class="percentbar1" style="width:100px;">
+                <div style="width:10px;font-size:8pt;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="responsecontainer"">
+    <div id="boxfielddata" title="50% remaining" ><img src="http://devel.baileystaproom.com/wp-content/uploads/OregonOutline.png" style="vertical-align: text-bottom;" width="30"> <b><span>22: <a href="http://www.montavillabrew.com"  target="_blank">Montavilla Brew Works</a> <i>Alleged Infringement</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=Alleged Infringement Alleged Infringement" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=Montavilla Brew Works Alleged Infringement&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />Cascadian Dark Ale   7.7% <a href="http://maps.google.com/maps?q=Portland, OR" target="_blank">Portland, OR</a> <span></span>
+        <div id="prices">10oz &#8211; $3 | 20oz &#8211; $5  |
+            <div id="GrowlerPrice"> <form id='cartButtonForm_43' class="Cart66CartButton" method="post" action="http://www.baileystaproom.com/store/cart/" > <input type='hidden' name='task' id="task_43" value='addToCart' /> <input type='hidden' name='cart66ItemId' value='43' /> <input type='hidden' name='product_url' value='http://www.baileystaproom.com/draft-list/' /> <span class="Cart66Price Cart66PriceDescription"> 32oz Crowler $8 </span> <input type='submit' value='Add to Cart' class='Cart66ButtonPrimary purAddToCart ajax-button' name='addToCart_43' id='addToCart_43' /> </form> <div id="stock_message_box_43" class="alert-message alert-error" style="display: none;"> <h2>We're Sorry</h2> <p id="stock_message_43"></p> <input type="button" name="close" value="OK" id="close" class="Cart66ButtonSecondary modalClose" /> </div> <div id="response_warning" class="alert-message warning_43" style="display: none;"> <p><strong><span class="message-header">Inventory Restriction</span></strong></p> <div id="message_warning" class="warning_message_43"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_error" class="alert-message alert-error error_43" style="display: none;"> <p><strong><span class="message-header">Inventory Failure</span></strong></p> <div id="message_error" class="error_message_43"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_success" class="alert-message success success_43" style="display: none;"> <p><strong><span class="message-header">Success!</span></strong></p> <div id="message_success" class="success_message_43"></div></div>  </div>
+        </div>
+        <div><span style="position:relative;"></span>
+            <div class="percentbar3" style="width:100px;">
+                <div style="width:50px;font-size:8pt;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="responsecontainer"">
+    <div id="boxfielddata" title="78% remaining" ><img src="http://devel.baileystaproom.com/wp-content/uploads/OregonOutline.png" style="vertical-align: text-bottom;" width="30"> <b><span>23: <a href="http://www.fortgeorgebrewery.com"  target="_blank">Fort George</a> <i>Simian Stout</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=Simian Stout Simian Stout" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=Fort George Simian Stout&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />Chocolate Banana Stout w/ hazelnuts 7.1% <a href="http://maps.google.com/maps?q=Astoria, OR" target="_blank">Astoria, OR</a> <span></span>
+        <div id="prices">10oz &#8211; $3 | 20oz &#8211; $5  |
+            <div id="GrowlerPrice"> <form id='cartButtonForm_44' class="Cart66CartButton" method="post" action="http://www.baileystaproom.com/store/cart/" > <input type='hidden' name='task' id="task_44" value='addToCart' /> <input type='hidden' name='cart66ItemId' value='44' /> <input type='hidden' name='product_url' value='http://www.baileystaproom.com/draft-list/' /> <span class="Cart66Price Cart66PriceDescription"> 32oz Crowler $9 </span> <input type='submit' value='Add to Cart' class='Cart66ButtonPrimary purAddToCart ajax-button' name='addToCart_44' id='addToCart_44' /> </form> <div id="stock_message_box_44" class="alert-message alert-error" style="display: none;"> <h2>We're Sorry</h2> <p id="stock_message_44"></p> <input type="button" name="close" value="OK" id="close" class="Cart66ButtonSecondary modalClose" /> </div> <div id="response_warning" class="alert-message warning_44" style="display: none;"> <p><strong><span class="message-header">Inventory Restriction</span></strong></p> <div id="message_warning" class="warning_message_44"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_error" class="alert-message alert-error error_44" style="display: none;"> <p><strong><span class="message-header">Inventory Failure</span></strong></p> <div id="message_error" class="error_message_44"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_success" class="alert-message success success_44" style="display: none;"> <p><strong><span class="message-header">Success!</span></strong></p> <div id="message_success" class="success_message_44"></div></div>  </div>
+        </div>
+        <div><span style="position:relative;"></span>
+            <div class="percentbar3" style="width:100px;">
+                <div style="width:78px;font-size:8pt;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="responsecontainer"">
+    <div id="boxfielddata" title="74% remaining" ><img src="http://devel.baileystaproom.com/wp-content/uploads/OregonOutline.png" style="vertical-align: text-bottom;" width="30"> <b><span>24: <a href="http://www.fallingskybrewing.com"  target="_blank">Falling Sky</a> <i>PuppetMaster</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=PuppetMaster PuppetMaster" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=Falling Sky PuppetMaster&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />Imperial IPA w/ pink and white peppercorns 7.0% <a href="http://maps.google.com/maps?q=Eugene, OR" target="_blank">Eugene, OR</a> <span></span>
+        <div id="prices">10oz &#8211; $4 | 20oz &#8211; $6  |
+            <div id="GrowlerPrice"> <form id='cartButtonForm_56' class="Cart66CartButton" method="post" action="http://www.baileystaproom.com/store/cart/" > <input type='hidden' name='task' id="task_56" value='addToCart' /> <input type='hidden' name='cart66ItemId' value='56' /> <input type='hidden' name='product_url' value='http://www.baileystaproom.com/draft-list/' /> <span class="Cart66Price Cart66PriceDescription"> 32oz Crowler $10 </span> <input type='submit' value='Add to Cart' class='Cart66ButtonPrimary purAddToCart ajax-button' name='addToCart_56' id='addToCart_56' /> </form> <div id="stock_message_box_56" class="alert-message alert-error" style="display: none;"> <h2>We're Sorry</h2> <p id="stock_message_56"></p> <input type="button" name="close" value="OK" id="close" class="Cart66ButtonSecondary modalClose" /> </div> <div id="response_warning" class="alert-message warning_56" style="display: none;"> <p><strong><span class="message-header">Inventory Restriction</span></strong></p> <div id="message_warning" class="warning_message_56"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_error" class="alert-message alert-error error_56" style="display: none;"> <p><strong><span class="message-header">Inventory Failure</span></strong></p> <div id="message_error" class="error_message_56"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_success" class="alert-message success success_56" style="display: none;"> <p><strong><span class="message-header">Success!</span></strong></p> <div id="message_success" class="success_message_56"></div></div>  </div>
+        </div>
+        <div><span style="position:relative;"></span>
+            <div class="percentbar3" style="width:100px;">
+                <div style="width:74px;font-size:8pt;"></div>
+            </div>
+        </div>
+    </div>
+    <div id="responsecontainer"">
+    <div id="boxfielddata" title="71% remaining" ><b><span>25: <a href="http:// www.sierranevada.com"  target="_blank">Sierra Nevada</a>/Geoff Phillips <i>Witney Hibiscus</i></span></b><span id="rateLinks"><a href="http://www.ratebeer.com/advbeersearch.php?BeerName=Witney Hibiscus Witney Hibiscus" target=_blank title="Click to find a Rate Beer description of this beer!" target=_blank title="Click to find a Rate Beer description of this beer!">RB</a><b>|</b><a href="http://beeradvocate.com/search?q=Sierra Nevada Witney Hibiscus&#038;qt=beer" target=_blank title="Click to find a Beer Advocate description of this beer!" target=_blank title="Click to find a Beer Advocate description of this beer!">BA</a></span><br />Farmhouse Ale w/ orange, hibiscus, &#038; Wit yeast- Hops (Sorachi Ace) 5.4% <a href="http://maps.google.com/maps?q=Chico, CA" target="_blank">Chico, CA</a> <span></span>
+        <div id="prices">10oz &#8211; $3 | 20oz &#8211; $5  |
+            <div id="GrowlerPrice"> <form id='cartButtonForm_57' class="Cart66CartButton" method="post" action="http://www.baileystaproom.com/store/cart/" > <input type='hidden' name='task' id="task_57" value='addToCart' /> <input type='hidden' name='cart66ItemId' value='57' /> <input type='hidden' name='product_url' value='http://www.baileystaproom.com/draft-list/' /> <span class="Cart66Price Cart66PriceDescription"> 32oz Crowler $9 </span> <input type='submit' value='Add to Cart' class='Cart66ButtonPrimary purAddToCart ajax-button' name='addToCart_57' id='addToCart_57' /> </form> <div id="stock_message_box_57" class="alert-message alert-error" style="display: none;"> <h2>We're Sorry</h2> <p id="stock_message_57"></p> <input type="button" name="close" value="OK" id="close" class="Cart66ButtonSecondary modalClose" /> </div> <div id="response_warning" class="alert-message warning_57" style="display: none;"> <p><strong><span class="message-header">Inventory Restriction</span></strong></p> <div id="message_warning" class="warning_message_57"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_error" class="alert-message alert-error error_57" style="display: none;"> <p><strong><span class="message-header">Inventory Failure</span></strong></p> <div id="message_error" class="error_message_57"></div> <input type="button" name="close" value="OK" class="Cart66ButtonSecondary modalClose"/></div><div id="response_success" class="alert-message success success_57" style="display: none;"> <p><strong><span class="message-header">Success!</span></strong></p> <div id="message_success" class="success_message_57"></div></div>  </div>
+        </div>
+        <div><span style="position:relative;"></span>
+            <div class="percentbar3" style="width:100px;">
+                <div style="width:71px;font-size:8pt;"></div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<div style="text-align:center;padding-top:20px;"><a href="http://www.digitalpour.com" target="_blank" style="text-decoration:none;" border="0"><img src="/images/digital_pour_logo.png" align="bottom" style="width:100px; padding:0px;border:0px solid black;" border=0></a><br /><span style="font-size:8pt; padding-top:-10px;">Data provided by <a href="http://www.digitalpour.com" target="_blank">DigitalPour</a></span></div></p>
+</div><!-- .entry-content -->
+</article><!-- #post-## -->
+
+
+
+</main><!-- #main -->
+</div><!-- #primary -->
+
+
+</div><!-- #content -->
+<footer id="colophon" class="site-footer" role="contentinfo">
+    <div class="site-info">
+
+        <ul class="FootNav">
+            <li>&copy;Bailey's Taproom 2007-2016</li>
+            <li><a href="mailto:email@baileystaproom.com">Email</a></li>
+
+            <li><a href="http://www.baileystaproom.com/?cat=1">Blog</a></li>
+
+
+            <li><a href="http://local.google.com/local?sourceid=navclient-ff&ie=UTF-8&rls=GGGL,GGGL:2006-15,GGGL:en&q=213+SW+Broadway%2C+Portland%2C+OR" target="_blank">213 SW Broadway</a></li>
+        </ul>		</div><!-- .site-info -->
+</footer><!-- #colophon -->
+</div><!-- #page -->
+
+<!-- This website uses Linkable Title Html And Php Widget v1.2.6 Wordpress plugin developed by PepLamb (PepLamb.com) --><style type="text/css" media="screen">.menu-item.hide_this_item{ display:none !important; }</style><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><script type='text/javascript' src='http://www.baileystaproom.com/wp-content/themes/graphy/js/navigation.js?ver=9c9c25011f3875fd55f3664e6ff64e73'></script>
+<script type='text/javascript' src='http://www.baileystaproom.com/wp-content/themes/graphy/js/skip-link-focus-fix.js?ver=9c9c25011f3875fd55f3664e6ff64e73'></script>
+<script type='text/javascript'>
+    /* <![CDATA[ */
+    var C66 = {"youHave":"You have","inYourShoppingCart":"in your shopping cart","trackInventory":"1","ajaxurl":"http:\/\/www.baileystaproom.com\/?cart66AjaxCartRequests","products":{"57":{"id":"57","name":"Sierra Nevada Witney Hibiscus","ajax":"yes","returnUrl":"http:\/\/www.baileystaproom.com\/draft-list\/","addingText":"Adding..."},"56":{"id":"56","name":"Falling Sky PuppetMaster","ajax":"yes","returnUrl":"http:\/\/www.baileystaproom.com\/draft-list\/","addingText":"Adding..."},"44":{"id":"44","name":"Fort George Simian Stout","ajax":"yes","returnUrl":"http:\/\/www.baileystaproom.com\/draft-list\/","addingText":"Adding..."},"43":{"id":"43","name":"Montavilla Brew Works Alleged Infringement","ajax":"yes","returnUrl":"http:\/\/www.baileystaproom.com\/draft-list\/","addingText":"Adding..."},"52":{"id":"52","name":"Anderson Valley Huge Arker","ajax":"yes","returnUrl":"http:\/\/www.baileystaproom.com\/draft-list\/","addingText":"Adding..."},"48":{"id":"48","name":"Fat Head\\'s Head Smasher","ajax":"yes","returnUrl":"http:\/\/www.baileystaproom.com\/draft-list\/","addingText":"Adding..."},"46":{"id":"46","name":"Bend Brewing Ching Ching","ajax":"yes","returnUrl":"http:\/\/www.baileystaproom.com\/draft-list\/","addingText":"Adding..."},"45":{"id":"45","name":"Sunriver Fuzztail Hefeweizen","ajax":"yes","returnUrl":"http:\/\/www.baileystaproom.com\/draft-list\/","addingText":"Adding..."},"51":{"id":"51","name":"Bell\\'s Cherry Stout","ajax":"yes","returnUrl":"http:\/\/www.baileystaproom.com\/draft-list\/","addingText":"Adding..."},"41":{"id":"41","name":"Terminal Gravity Wallowa Lake Lager","ajax":"yes","returnUrl":"http:\/\/www.baileystaproom.com\/draft-list\/","addingText":"Adding..."},"40":{"id":"40","name":"North Coast Stellar","ajax":"yes","returnUrl":"http:\/\/www.baileystaproom.com\/draft-list\/","addingText":"Adding..."},"39":{"id":"39","name":"Victory Ten Years Alt","ajax":"yes","returnUrl":"http:\/\/www.baileystaproom.com\/draft-list\/","addingText":"Adding..."},"54":{"id":"54","name":"Everybody\\'s EL ZESTO","ajax":"yes","returnUrl":"http:\/\/www.baileystaproom.com\/draft-list\/","addingText":"Adding..."},"36":{"id":"36","name":"Silver Moon IPA 97","ajax":"yes","returnUrl":"http:\/\/www.baileystaproom.com\/draft-list\/","addingText":"Adding..."},"34":{"id":"34","name":"Kells Irish Reds","ajax":"yes","returnUrl":"http:\/\/www.baileystaproom.com\/draft-list\/","addingText":"Adding..."},"30":{"id":"30","name":"Bushwhacker Cider Alice","ajax":"yes","returnUrl":"http:\/\/www.baileystaproom.com\/draft-list\/","addingText":"Adding..."}}};
+    /* ]]> */
+</script>
+<script type='text/javascript' src='http://www.baileystaproom.com/wp-content/plugins/cart66/js/cart66-library.js?ver=9c9c25011f3875fd55f3664e6ff64e73'></script>
+<script type='text/javascript' src='http://www.baileystaproom.com/wp-includes/js/wp-embed.min.js?ver=9c9c25011f3875fd55f3664e6ff64e73'></script>
+<!--stats_footer_test--><script src="http://stats.wordpress.com/e-201612.js" type="text/javascript"></script>
+<script type="text/javascript">
+    st_go({blog:'12149692',v:'ext',post:'8'});
+    var load_cmc = function(){linktracker_init(12149692,8,2);};
+    if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+    else load_cmc();
+</script>
+
+</body>
+</html>
