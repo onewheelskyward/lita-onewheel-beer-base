@@ -4,7 +4,7 @@ require 'sanitize'
 
 module Lita
   module Handlers
-    class OnewheelBaileys < Handler
+    class OnewheelBeerBase < Handler
       route /^taps$/i,
             :taps_list,
             command: true,
