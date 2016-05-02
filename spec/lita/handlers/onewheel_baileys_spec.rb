@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Lita::Handlers::OnewheelBaileys, lita_handler: true do
+describe Lita::Handlers::OnewheelBeerBase, lita_handler: true do
   it { is_expected.to route_command('taps') }
   it { is_expected.to route_command('taps 4') }
   it { is_expected.to route_command('taps nitro') }
