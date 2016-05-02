@@ -1,18 +1,15 @@
-# lita-onewheel-baileys
+# lita-onewheel-beer-base
 
-[![Build Status](https://travis-ci.org/onewheelskyward/lita-onewheel-baileys.png?branch=master)](https://travis-ci.org/onewheelskyward/lita-onewheel-baileys)
-[![Coverage Status](https://coveralls.io/repos/onewheelskyward/lita-onewheel-baileys/badge.png)](https://coveralls.io/r/onewheelskyward/lita-onewheel-baileys)
+[![Build Status](https://travis-ci.org/onewheelskyward/lita-onewheel-beer-base.png?branch=master)](https://travis-ci.org/onewheelskyward/lita-onewheel-beer-base)
+[![Coverage Status](https://coveralls.io/repos/onewheelskyward/lita-onewheel-beer-base/badge.png)](https://coveralls.io/r/onewheelskyward/lita-onewheel-beer-base)
 
-Searches Bailey's Taproom draft list for data and displays it in IRC.
-
-http://www.baileystaproom.com/draft-list/
 
 ## Installation
 
-Add lita-onewheel-baileys to your Lita instance's Gemfile:
+Add lita-onewheel-beer-base to your Lita instance's Gemfile:
 
 ``` ruby
-gem 'lita-onewheel-baileys'
+gem 'lita-onewheel-beer-base'
 ```
 
 ## Usage
