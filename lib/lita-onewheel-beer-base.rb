@@ -6,7 +6,7 @@ Lita.load_locales Dir[File.expand_path(
 
 require 'lita/handlers/onewheel_beer_base'
 
-Lita::Handlers::OnewheelBaileys.template_root File.expand_path(
+Lita::Handlers::OnewheelBeerBase.template_root File.expand_path(
   File.join('..', '..', 'templates'),
  __FILE__
 )
