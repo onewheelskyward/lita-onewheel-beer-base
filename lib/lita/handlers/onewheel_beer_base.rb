@@ -46,7 +46,8 @@ module Lita
             help: {'tapslow' => 'Show me the highest abv keg.'}
 
       def taps_list(response)
-        beers = get_source
+        # wakka wakka
+        beers = self.get_source
         reply = "Bailey's taps: "
         beers.each do |tap, datum|
           reply += "#{tap}) "
