@@ -9,7 +9,7 @@ module Lita
       def taps_list(response)
         # wakka wakka
         beers = self.get_source
-        reply = "Bailey's taps: "
+        reply = "taps: "
         beers.each do |tap, datum|
           reply += "#{tap}) "
           reply += get_tap_type_text(datum[:type])
@@ -20,6 +20,10 @@ module Lita
 
         Lita.logger.info "Replying with #{reply}"
         response.reply reply
+      end
+
+      def get_tap_type_text(type)
+        (type.empty?) ? '' : "(#{type}) "
       end
 
       def taps_deets(response)
