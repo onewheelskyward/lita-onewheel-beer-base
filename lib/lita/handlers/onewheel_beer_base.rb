@@ -199,6 +199,10 @@ module Lita
         (type.empty?) ? '' : "(#{type}) "
       end
 
+      def get_source
+        raise Exception
+      end
+
       Lita.register_handler(self)
     end
   end
