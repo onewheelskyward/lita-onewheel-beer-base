@@ -142,24 +142,6 @@ module Lita
         send_response(high_tap, beers[high_tap], response)
       end
 
-      def send_response(tap, datum, response)
-        reply = "tap #{tap}) #{get_tap_type_text(datum[:type])}"
-        reply += "#{datum[:brewery]} "
-        reply += "#{datum[:name]} "
-        reply += "- #{datum[:desc]}, "
-        # reply += "Served in a #{datum[1]['glass']} glass.  "
-        reply += "#{get_display_prices datum[:prices]}, "
-        reply += "#{datum[:remaining]}"
-
-        Lita.logger.info "send_response: Replying with #{reply}"
-
-        response.reply reply
-      end
-
-      def get_tap_type_text(type)
-        (type.empty?) ? '' : "(#{type}) "
-      end
-
       def get_source
         raise Exception
       end
