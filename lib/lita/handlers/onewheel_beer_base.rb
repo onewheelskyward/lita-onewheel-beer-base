@@ -5,45 +5,6 @@ require 'sanitize'
 module Lita
   module Handlers
     class OnewheelBeerBase < Handler
-      route /^taps$/i,
-            :taps_list,
-            command: true,
-            help: {'taps' => 'Display the current taps.'}
-
-      route /^taps ([\w ]+)$/i,
-            :taps_deets,
-            command: true,
-            help: {'taps 4' => 'Display the tap 4 deets, including prices.'}
-
-      route /^taps ([<>=\w.\s]+)%$/i,
-            :taps_by_abv,
-            command: true,
-            help: {'taps >4%' => 'Display beers over 4% ABV.'}
-
-      route /^taps ([<>=\$\w.\s]+)$/i,
-            :taps_by_price,
-            command: true,
-            help: {'taps <$5' => 'Display beers under $5.'}
-
-      route /^taps (roulette|random)$/i,
-            :taps_by_random,
-            command: true,
-            help: {'taps roulette' => 'Can\'t decide?  Let me do it for you!'}
-
-      route /^tapslow$/i,
-            :taps_by_remaining,
-            command: true,
-            help: {'tapslow' => 'Show me the kegs at <10% remaining, or the lowest one available.'}
-
-      route /^tapsabvlow$/i,
-            :taps_low_abv,
-            command: true,
-            help: {'tapslow' => 'Show me the lowest abv keg.'}
-
-      route /^tapsabvhigh$/i,
-            :taps_high_abv,
-            command: true,
-            help: {'tapslow' => 'Show me the highest abv keg.'}
 
       def taps_list(response)
         # wakka wakka
