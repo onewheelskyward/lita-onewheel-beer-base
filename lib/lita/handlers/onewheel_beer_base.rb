@@ -5,11 +5,12 @@ require 'sanitize'
 module Lita
   module Handlers
     class OnewheelBeerBase < Handler
+      attr_accessor :bar_name
 
       def taps_list(response)
         # wakka wakka
         beers = self.get_source
-        reply = "taps: "
+        reply = '#{@bar_name} taps: '
         beers.each do |tap, datum|
           reply += "#{tap}) "
           reply += get_tap_type_text(datum[:type])
@@ -27,7 +28,7 @@ module Lita
       end
 
       def taps_deets(response)
-        Lita.logger.debug "taps_deets started"
+        Lita.logger.debug 'taps_deets started'
         beers = get_source
         beers.each do |tap, datum|
           query = response.matches[0][0].strip
@@ -78,16 +79,16 @@ module Lita
           if (price_matches = query.match(/([><=]+)\s*\$(\d+\.*\d*)/))
             direction = price_matches.to_s.match(/[<>=]+/).to_s
             price_requested = price_matches.to_s.match(/\d+.*\d*/).to_s
-            if direction == '>' and datum[:prices][1][:cost].to_f > price_requested.to_f
+            if direction == '>' and datum[:price].to_f > price_requested.to_f
               send_response(tap, datum, response)
             end
-            if direction == '<' and datum[:prices][1][:cost].to_f < price_requested.to_f
+            if direction == '<' and datum[:price].to_f < price_requested.to_f
               send_response(tap, datum, response)
             end
-            if direction == '>=' and datum[:prices][1][:cost].to_f >= price_requested.to_f
+            if direction == '>=' and datum[:price].to_f >= price_requested.to_f
               send_response(tap, datum, response)
             end
-            if direction == '<=' and datum[:prices][1][:cost].to_f <= price_requested.to_f
+            if direction == '<=' and datum[:price].to_f <= price_requested.to_f
               send_response(tap, datum, response)
             end
           end
