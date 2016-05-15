@@ -14,7 +14,7 @@ module Lita
           reply += "#{tap}) "
           reply += get_tap_type_text(datum[:type])
           reply += datum[:brewery].to_s + ' '
-          reply += datum[:name].to_s + '  '
+          reply += (datum[:name].to_s.empty?)? '' : datum[:name].to_s + '  '
         end
         reply = reply.strip.sub /,\s*$/, ''
 
