@@ -5,12 +5,9 @@ require 'sanitize'
 module Lita
   module Handlers
     class OnewheelBeerBase < Handler
-      attr_accessor :bar_name
-
       def taps_list(response)
-        # wakka wakka
         beers = self.get_source
-        reply = "#{@bar_name} taps: "
+        reply = 'taps: '
         beers.each do |tap, datum|
           reply += "#{tap}) "
           reply += get_tap_type_text(datum[:type])
