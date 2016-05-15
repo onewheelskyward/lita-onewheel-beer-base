@@ -31,7 +31,7 @@ module Lita
           query = response.matches[0][0].strip
           # Search directly by tap number OR full text match.
           # Let's make cask and nitro taps specific.
-          Lita.logger.debug "Searching for #{query} within #{tap}"
+          Lita.logger.debug "Searching for #{query} within #{tap}, #{datum[:search]}"
           if query.match(/^\d+$/)
             # Short circuit if we're searching only by number.
             if tap == query
