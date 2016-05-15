@@ -23,7 +23,7 @@ module Lita
       end
 
       def get_tap_type_text(type)
-        (type.empty?) ? '' : "(#{type}) "
+        (type.nil? or type.empty?) ? '' : "(#{type}) "
       end
 
       def taps_deets(response)
