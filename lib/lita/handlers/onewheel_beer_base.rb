@@ -31,9 +31,12 @@ module Lita
           query = response.matches[0][0].strip
           # Search directly by tap number OR full text match.
           # Let's make cask and nitro taps specific.
+          Lita.logger.debug "Searching for #{query} within #{tap}"
           if query.match(/^\d+$/) and tap == query
+            Lita.logger.debug "#{query} matched #{tap} by number"
             send_response(tap, datum, response)
           elsif (datum[:search].to_s.match(/#{query}/i)) or (datum[:type].to_s.downcase.match(/#{query}/i))  # Cask and Nitro
+            Lita.logger.debug "#{query} matched #{datum[:search]} by text"
             send_response(tap, datum, response)
           end
         end
