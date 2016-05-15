@@ -33,7 +33,7 @@ module Lita
           query = response.matches[0][0].strip
           # Search directly by tap number OR full text match.
           # Let's make cask and nitro taps specific.
-          if (query.match(/^\d+$/) and tap == query) or (datum[:search].match(/#{query}/i)) or (datum[:type].downcase.match(/#{query}/i))  # Cask and Nitro
+          if (query.match(/^\d+$/) and tap == query) or (datum[:search].to_s.match(/#{query}/i)) or (datum[:type].to_s.downcase.match(/#{query}/i))  # Cask and Nitro
             send_response(tap, datum, response)
           end
         end
