@@ -11,7 +11,7 @@ module Lita
         beers.each do |tap, datum|
           reply += "#{tap}) "
           reply += get_tap_type_text(datum[:type])
-          reply += datum[:brewery].to_s + ' '
+          reply += (datum[:brewery].to_s.empty?)? '' : datum[:brewery].to_s + ' '
           reply += (datum[:name].to_s.empty?)? '' : datum[:name].to_s + '  '
         end
         reply = reply.strip.sub /,\s*$/, ''
