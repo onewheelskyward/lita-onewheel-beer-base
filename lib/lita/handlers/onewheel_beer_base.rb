@@ -34,7 +34,7 @@ module Lita
           Lita.logger.debug "Searching for #{query} within #{tap}, #{datum[:search]}"
           if query.match(/^\d+$/)
             # Short circuit if we're searching only by number.
-            if tap == query
+            if tap.to_s == query.to_s
               Lita.logger.debug "#{query} matched #{tap} by number"
               send_response(tap, datum, response)
             end

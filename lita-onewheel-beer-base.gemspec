@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'lita-onewheel-beer-base'
-  spec.version       = '2.0.6'
+  spec.version       = '2.0.7'
   spec.authors       = ['Andrew Kreps']
   spec.email         = ['andrew.kreps@gmail.com']
   spec.description   = %q{Lita base class for beer searches.}
