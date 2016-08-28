@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = 'lita-onewheel-beer-base'
-  spec.version       = '2.0.7'
+  spec.version       = '2.0.8'
   spec.authors       = ['Andrew Kreps']
   spec.email         = ['andrew.kreps@gmail.com']
   spec.description   = %q{Lita base class for beer searches.}
@@ -14,7 +14,7 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ['lib']
 
-  spec.add_runtime_dependency 'lita', '~> 4.7'
+  spec.add_runtime_dependency 'lita', '~> 4'
   spec.add_runtime_dependency 'sanitize', '~> 4.0'
   spec.add_runtime_dependency 'rest-client', '~> 1.8'
 
